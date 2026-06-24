@@ -1,1 +1,1 @@
-MNT Prototype
+SMI Group Prototype
