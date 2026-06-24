@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>MNT Santé · Prototype</title>
+<title>SMI Mutuelle · Prototype</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,37 +17,37 @@ html{scrollbar-width:none;}
 ───────────────────────────────────────── */
 :root{
   --bg:#f8f9fa; --card:#fff; --card-b:transparent;
-  --blue1:#0284c8; --blue2:#075d86; --blue3:#014162; --blue5:#006a9c; --blue6:#1a5f8a; --blue7:#0087c7; --blue9:#0a2d42;
-  --lb1:#afe8ff; --lb2:#85d7f8; --lb3:#daf2ff; --lb4:#e0f2fe; --lb5:#f0f8ff;
-  --lime1:#bdcd07; --lime2:#6f7c08; --lime3:#555f0d; --lime4:#d9e45b;
-  --td:#384257; --td2:#1e2a3f; --td3:#1a2332; --tm:#939dac; --tm2:#707a8b;
+  --blue1:#fa0000; --blue2:#9b0000; --blue3:#4b0000; --blue5:#c80000; --blue6:#c80000; --blue7:#fa0000; --blue9:#4b0000;
+  --lb1:#fdb0b0; --lb2:#fc7d7d; --lb3:#fee3e3; --lb4:#fee3e3; --lb5:#fff5f5;
+  --lime1:#fa0000; --lime2:#9b0000; --lime3:#4b0000; --lime4:#fee3e3;
+  --td:#3d3d3d; --td2:#1c1c1c; --td3:#141414; --tm:#9a9a9a; --tm2:#777777;
   --red1:#ef4444; --red2:#dc2626; --red-bg:#fff5f5; --red-br:#fca5a5; --red-ibg:#fee2e2;
   --am1:#fbbf36; --am2:#c47a00; --am-bg:#fffbeb; --am-br:#fcd34d; --am-ibg:#fef3c7;
-  --tip-h:#fff9f0; --coach-bg1:#f8fcbd;
+  --tip-h:#fff9f0; --coach-bg1:#fff1f1;
   --sep:#f1f3f5; --input-bg:#f8f9fa;
   --sh:0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.04);
   --sh2:0 1px 2px rgba(0,0,0,.05);
   --nav-sh:0 -1px 0 #f1f3f5;
-  --hero:linear-gradient(115.5deg,#0284c8 5.8%,#014162 118.5%);
-  --ob:linear-gradient(126deg,#0087c7 26.8%,#1a5f8a 71.2%,#0f3d5c 100%);
-  --coach:linear-gradient(150deg,#0087c7 26.8%,#1a5f8a 71.2%,#0f3d5c 100%);
+  --hero:linear-gradient(115.5deg,#fa0000 5.8%,#4b0000 118.5%);
+  --ob:linear-gradient(126deg,#fa0000 26.8%,#c80000 71.2%,#4b0000 100%);
+  --coach:linear-gradient(150deg,#fa0000 26.8%,#c80000 71.2%,#4b0000 100%);
 }
 .dark{
   --bg:#0d1117; --card:#161b22; --card-b:#21262d;
-  --blue1:#58a6ff; --blue2:#1f6feb; --blue5:#79c0ff; --blue6:#58a6ff; --blue7:#1f6feb; --blue9:#c9d1d9;
-  --lb1:#1a3a4a; --lb2:#1a3a5a; --lb3:#0d1f2d; --lb4:#0d1f2d; --lb5:#161b22;
-  --lime2:#d4e157; --lime3:#c6d63e;
+  --blue1:#fb4545; --blue2:#fa0000; --blue5:#fc7d7d; --blue6:#fb4545; --blue7:#fa0000; --blue9:#c9d1d9;
+  --lb1:#3a0f0f; --lb2:#3a1414; --lb3:#2a0808; --lb4:#2a0808; --lb5:#161b22;
+  --lime2:#fb4545; --lime3:#fa0000;
   --td:#c9d1d9; --td2:#e6edf3; --td3:#f0f6fc; --tm:#8b949e; --tm2:#8b949e;
   --red1:#f85149; --red2:#da3633; --red-bg:#1a0000; --red-br:#6e3630; --red-ibg:#2d1515;
   --am2:#d29922; --am-bg:#1a1500; --am-br:#6e5e1a; --am-ibg:#2d2a15;
-  --tip-h:#1a1500; --coach-bg1:#1a1f0a; --sep:#21262d; --input-bg:#0d1117;
-  --lime4:#1e2d0a; --am1:#d4a017; --lime1:#d4e157;
+  --tip-h:#1a1500; --coach-bg1:#1a0808; --sep:#21262d; --input-bg:#0d1117;
+  --lime4:#2a0808; --am1:#d4a017; --lime1:#fb4545;
   --sh:0 1px 3px rgba(0,0,0,.3),0 4px 12px rgba(0,0,0,.25);
   --sh2:0 1px 2px rgba(0,0,0,.2);
   --nav-sh:0 -1px 0 #21262d;
-  --hero:linear-gradient(115.5deg,#1f6feb 5.8%,#0d1117 118.5%);
-  --ob:linear-gradient(126deg,#1f6feb 26.8%,#0d1117 71.2%,#010409 100%);
-  --coach:linear-gradient(150deg,#1f6feb 26.8%,#0d1117 71.2%,#010409 100%);
+  --hero:linear-gradient(115.5deg,#fa0000 5.8%,#0d1117 118.5%);
+  --ob:linear-gradient(126deg,#fa0000 26.8%,#0d1117 71.2%,#010409 100%);
+  --coach:linear-gradient(150deg,#fa0000 26.8%,#0d1117 71.2%,#010409 100%);
 }
 
 /* ─────────────────────────────────────────
@@ -421,7 +421,7 @@ body {
 <body>
 
 <div class="desktop-bg"></div>
-<div class="desktop-label">MNT Santé</div>
+<div class="desktop-label">SMI Mutuelle</div>
 <div class="desktop-badge">Prototype · 2026</div>
 <div class="desktop-hint">Naviguez en touchant les éléments · Tous les flux sont interactifs</div>
 
@@ -622,7 +622,7 @@ function header(title, back=false, backDest=''){
     <div style="display:flex;align-items:center;gap:10px">
       ${back
         ?`<button class="tap-btn" data-action="goBack" data-val="${backDest}" style="background:${S.dark?'var(--sep)':'#f0f2f5'};border:none;border-radius:8px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer">${ic('arrow-left',16,'var(--td2)')}</button>`
-        :`<img src="https://res.cloudinary.com/dh6a0kqtg/image/upload/q_auto/f_auto/v1776154148/logo_c8gvw9.png" alt="MNT" style="height:48px;width:auto;object-fit:contain;display:block" onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div style=\\'background:var(--blue1);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff\\'>MNT</div>')"/>`}
+        :`<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgOTYiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLDQwKSI+PHBvbHlnb24gcG9pbnRzPSItMTEuNSwwLjAgLTUuOCwtMTAuMCA1LjgsLTEwLjAgMTEuNSwwLjAgNS44LDEwLjAgLTUuOCwxMC4wIiBmaWxsPSJub25lIiBzdHJva2U9IiNGQTAwMDAiIHN0cm9rZS13aWR0aD0iMi40IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSItMjguOCwtMTAuMCAtMjMuMCwtMjAuMCAtMTEuNSwtMjAuMCAtNS44LC0xMC4wIC0xMS41LC0wLjAgLTIzLjAsLTAuMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkEwMDAwIiBzdHJva2Utd2lkdGg9IjIuNCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iLTI4LjgsMTAuMCAtMjMuMCwwLjAgLTExLjUsMC4wIC01LjgsMTAuMCAtMTEuNSwyMC4wIC0yMy4wLDIwLjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZBMDAwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjUuOCwtMTAuMCAxMS41LC0yMC4wIDIzLjAsLTIwLjAgMjguOCwtMTAuMCAyMy4wLC0wLjAgMTEuNSwtMC4wIiBmaWxsPSJub25lIiBzdHJva2U9IiNGQTAwMDAiIHN0cm9rZS13aWR0aD0iMi40IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI1LjgsMTAuMCAxMS41LDAuMCAyMy4wLDAuMCAyOC44LDEwLjAgMjMuMCwyMC4wIDExLjUsMjAuMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkEwMDAwIiBzdHJva2Utd2lkdGg9IjIuNCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvZz48dGV4dCB4PSI4NiIgeT0iNTYiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1zaXplPSI1MCIgZmlsbD0iIzAwMCIgbGV0dGVyLXNwYWNpbmc9Ii0xIj5zbWk8L3RleHQ+PGNpcmNsZSBjeD0iMjAxIiBjeT0iMjIiIHI9IjYiIGZpbGw9IiNGQTAwMDAiLz48dGV4dCB4PSI4OCIgeT0iNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjUwMCIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzAwMCIgbGV0dGVyLXNwYWNpbmc9IjQiPk1VVFVFTExFPC90ZXh0Pjx0ZXh0IHg9Ijg4IiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iNjAwIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkEwMDAwIiBsZXR0ZXItc3BhY2luZz0iMC41Ij5TYW50w6kgfCBQcsOpdm95YW5jZTwvdGV4dD48L3N2Zz4=" alt="SMI" style="height:48px;width:auto;object-fit:contain;display:block" onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div style=\\'background:var(--blue1);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#fff\\'>SMI</div>')"/>`}
       ${title?`<span style="font-weight:700;font-size:16px;color:var(--td2);letter-spacing:-.2px">${title}</span>`:''}
     </div>
     <div style="display:flex;align-items:center;gap:8px">
@@ -674,9 +674,9 @@ function renderOnboarding(){
   // It's a first-impression screen, not a navigation target.
   return `<div style="background:var(--card);min-height:100%;display:flex;flex-direction:column;align-items:center;padding:calc(52px + 40px) 20px 40px;color:var(--td2);font-family:'Plus Jakarta Sans',sans-serif;margin-top:-52px">
     <div style="background:transparent;border-radius:22px;padding:12px 22px;margin-bottom:22px;animation:ob-enter 400ms var(--ease) 0ms both;display:flex;justify-content:center">
-      <img src="https://res.cloudinary.com/dh6a0kqtg/image/upload/q_auto/f_auto/v1776154148/logo_c8gvw9.png" alt="MNT" style="height:68px;width:auto;object-fit:contain;display:block" onerror="this.outerHTML='<div style=\\'font-size:40px;font-weight:900;letter-spacing:-1.5px;color:var(--blue1)\\'>MNT<span style=\\'color:#bdcd07\\'\\'>.</span></div>'"/>
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgOTYiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLDQwKSI+PHBvbHlnb24gcG9pbnRzPSItMTEuNSwwLjAgLTUuOCwtMTAuMCA1LjgsLTEwLjAgMTEuNSwwLjAgNS44LDEwLjAgLTUuOCwxMC4wIiBmaWxsPSJub25lIiBzdHJva2U9IiNGQTAwMDAiIHN0cm9rZS13aWR0aD0iMi40IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSItMjguOCwtMTAuMCAtMjMuMCwtMjAuMCAtMTEuNSwtMjAuMCAtNS44LC0xMC4wIC0xMS41LC0wLjAgLTIzLjAsLTAuMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkEwMDAwIiBzdHJva2Utd2lkdGg9IjIuNCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iLTI4LjgsMTAuMCAtMjMuMCwwLjAgLTExLjUsMC4wIC01LjgsMTAuMCAtMTEuNSwyMC4wIC0yMy4wLDIwLjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZBMDAwMCIgc3Ryb2tlLXdpZHRoPSIyLjQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjUuOCwtMTAuMCAxMS41LC0yMC4wIDIzLjAsLTIwLjAgMjguOCwtMTAuMCAyMy4wLC0wLjAgMTEuNSwtMC4wIiBmaWxsPSJub25lIiBzdHJva2U9IiNGQTAwMDAiIHN0cm9rZS13aWR0aD0iMi40IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI1LjgsMTAuMCAxMS41LDAuMCAyMy4wLDAuMCAyOC44LDEwLjAgMjMuMCwyMC4wIDExLjUsMjAuMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkEwMDAwIiBzdHJva2Utd2lkdGg9IjIuNCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvZz48dGV4dCB4PSI4NiIgeT0iNTYiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1zaXplPSI1MCIgZmlsbD0iIzAwMCIgbGV0dGVyLXNwYWNpbmc9Ii0xIj5zbWk8L3RleHQ+PGNpcmNsZSBjeD0iMjAxIiBjeT0iMjIiIHI9IjYiIGZpbGw9IiNGQTAwMDAiLz48dGV4dCB4PSI4OCIgeT0iNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjUwMCIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzAwMCIgbGV0dGVyLXNwYWNpbmc9IjQiPk1VVFVFTExFPC90ZXh0Pjx0ZXh0IHg9Ijg4IiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iNjAwIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkEwMDAwIiBsZXR0ZXItc3BhY2luZz0iMC41Ij5TYW50w6kgfCBQcsOpdm95YW5jZTwvdGV4dD48L3N2Zz4=" alt="SMI" style="height:68px;width:auto;object-fit:contain;display:block" onerror="this.outerHTML='<div style=\\'font-size:40px;font-weight:900;letter-spacing:-1.5px;color:var(--blue1)\\'>SMI<span style=\\'color:#fa0000\\'\\'>.</span></div>'"/>
     </div>
-    <h1 style="font-size:28px;font-weight:900;margin-bottom:8px;text-align:center;line-height:1.15;letter-spacing:-.6px;color:var(--td2);animation:ob-enter 400ms var(--ease) 80ms both">Bienvenue sur<br>MNT</h1>
+    <h1 style="font-size:28px;font-weight:900;margin-bottom:8px;text-align:center;line-height:1.15;letter-spacing:-.6px;color:var(--td2);animation:ob-enter 400ms var(--ease) 80ms both">Bienvenue sur<br>SMI</h1>
     <p style="font-size:14px;text-align:center;color:var(--tm2);margin-bottom:36px;line-height:1.65;animation:ob-enter 400ms var(--ease) 140ms both">Gérez votre mutuelle<br>en quelques gestes</p>
     ${feats.map((f,i)=>`<div style="background:var(--lb5);border-radius:16px;padding:14px 16px;display:flex;align-items:center;gap:14px;width:100%;margin-bottom:10px;border:1px solid var(--lb4);animation:ob-enter 400ms var(--ease) ${200+i*60}ms both">
       <div style="background:var(--blue1);border-radius:14px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;flex-shrink:0">${ic(f.icon,20,'#fff')}</div>
@@ -692,7 +692,7 @@ function renderOnboarding(){
 function renderDashboard(){
   const recent=[
     {ic:'stethoscope',n:'Dentiste',dt:'15/03/2026',a:'+230€',st:'Remboursé',sb:'var(--lime1)'},
-    {ic:'glasses',n:'Optique',dt:'02/03/2026',a:'',st:'En cours',sb:'#85d7f8'},
+    {ic:'glasses',n:'Optique',dt:'02/03/2026',a:'',st:'En cours',sb:'#fc7d7d'},
     {ic:'building2',n:'Médecin généraliste',dt:'20/02/2026',a:'+25€',st:'Remboursé',sb:'var(--lime1)'},
   ];
   const coach=[
@@ -716,7 +716,7 @@ function renderDashboard(){
         <div style="position:relative;z-index:1">
           <div style="font-size:14px;opacity:.65;letter-spacing:.2px;margin-bottom:6px">Bonjour,</div>
           <div style="font-size:32px;font-weight:900;letter-spacing:-.8px;line-height:1.1">Marie 👋</div>
-          <div style="font-size:13px;opacity:.5;margin-top:10px;font-weight:500">MNT Santé · Formule Confort+</div>
+          <div style="font-size:13px;opacity:.5;margin-top:10px;font-weight:500">SMI Mutuelle · Formule Confort+</div>
         </div>
       </div>
 
@@ -781,7 +781,7 @@ function renderDashboard(){
 
       <!-- Bilan coach -->
       <div style="background:var(--coach);border-radius:26px;padding:26px">
-        ${bdg('↑ Coach Santé MNT','var(--lime1)','#000','font-weight:800;font-size:10px;padding:4px 10px')}
+        ${bdg('↑ Coach Santé SMI','var(--lime1)','#000','font-weight:800;font-size:10px;padding:4px 10px')}
         <h3 style="font-size:18px;font-weight:900;color:#fff;margin-top:14px;margin-bottom:8px;letter-spacing:-.5px">Votre bilan du mois</h3>
         <p style="font-size:13px;color:rgba(255,255,255,.72);margin-bottom:16px;line-height:1.6">Quelques habitudes simples pour prendre soin de vous — et de vos remboursements.</p>
         ${tips.map(r=>`<div style="background:var(--lb1);border-radius:14px;padding:14px;display:flex;align-items:center;gap:12px;margin-bottom:10px;border:1px solid rgba(255,255,255,.1)">
@@ -808,7 +808,7 @@ function renderDashboard(){
 function renderDeclarations(){
   const all=[
     {ic:'stethoscope',n:'Dentiste',s:'Dr. Martin · 15/03',st:'Remboursé',sb:'var(--lime1)',c:'320€',r:'+230€'},
-    {ic:'glasses',n:'Optique',s:'Optique Lumière · 02/03',st:'En cours',sb:'#85d7f8',c:'450€',r:''},
+    {ic:'glasses',n:'Optique',s:'Optique Lumière · 02/03',st:'En cours',sb:'#fc7d7d',c:'450€',r:''},
     {ic:'building2',n:'Médecin',s:'Dr. Leroy · 20/02',st:'Remboursé',sb:'var(--lime1)',c:'25€',r:'+25€'},
     {ic:'dumbbell',n:'Kiné',s:'Cabinet Kiné · 10/02',st:'Remboursé',sb:'var(--lime1)',c:'120€',r:'+78€'},
     {ic:'pill',n:'Pharmacie',s:'Pharmacie · 05/02',st:'En attente',sb:'var(--sep)',c:'45€',r:''},
@@ -931,9 +931,9 @@ function renderCoach(){
 // ═══════════════════════════════════════════════
 function renderMessagerie(){
   const msgs=[
-    {av:'M+',bg:'var(--lime1)',n:'MNT Santé',dt:'18/03',s:'Confirmation remboursement Dentiste',u:false},
+    {av:'M+',bg:'var(--lime1)',n:'SMI Mutuelle',dt:'18/03',s:'Confirmation remboursement Dentiste',u:false},
     {av:'MD',bg:'var(--sep)',n:'Moi',dt:'10/03',s:'Question sur couverture optique',u:false},
-    {av:'M+',bg:'var(--lime1)',n:'MNT Santé',dt:'12/03',s:'RE: Question couverture optique',u:true},
+    {av:'M+',bg:'var(--lime1)',n:'SMI Mutuelle',dt:'12/03',s:'RE: Question couverture optique',u:true},
   ];
   const templates=[
     {ic:'alert-triangle',t:'Demande remboursement urgent'},
@@ -987,7 +987,7 @@ function renderProfil(){
           <div class="flip-front" style="background:var(--hero);padding:22px;color:#fff;height:100%;position:relative;overflow:hidden">
             <div style="position:absolute;right:-26px;top:-26px;width:130px;height:130px;border-radius:65px;background:rgba(255,255,255,.05)"></div>
             <div style="display:flex;justify-content:space-between;margin-bottom:14px;position:relative">
-              <div><div style="font-size:10px;opacity:.6;letter-spacing:.3px">Mutuelle</div><div style="font-size:20px;font-weight:900;letter-spacing:-.6px">MNT Santé</div></div>
+              <div><div style="font-size:10px;opacity:.6;letter-spacing:.3px">Mutuelle</div><div style="font-size:20px;font-weight:900;letter-spacing:-.6px">SMI Mutuelle</div></div>
               <div style="background:rgba(255,255,255,.14);border-radius:14px;width:44px;height:44px;display:flex;align-items:center;justify-content:center">${ic('building2',20,'#fff')}</div>
             </div>
             <div style="font-size:10px;opacity:.6;letter-spacing:.3px">Titulaire</div>
@@ -1163,7 +1163,7 @@ function renderTeleProgram(){
       <!-- Included -->
       <div class="card" style="padding:20px;background:var(--lb5);border:1.5px solid var(--lb4);box-shadow:none">
         <div style="font-size:15px;font-weight:700;color:var(--td2);margin-bottom:14px;letter-spacing:-.2px">Ce programme inclut</div>
-        ${[{ic:'video',t:'Séances en visio ou en cabinet'},{ic:'file-check',t:'Compte-rendu après chaque séance'},{ic:'bell',t:'Rappels & suivi entre les séances'},{ic:'shield',t:'100% pris en charge par MNT Santé'}].map(f=>`<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+        ${[{ic:'video',t:'Séances en visio ou en cabinet'},{ic:'file-check',t:'Compte-rendu après chaque séance'},{ic:'bell',t:'Rappels & suivi entre les séances'},{ic:'shield',t:'100% pris en charge par SMI Mutuelle'}].map(f=>`<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
           <div style="background:var(--blue1);width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">${ic(f.ic,14,'#fff')}</div>
           <span style="font-size:13px;color:var(--td2);font-weight:500">${f.t}</span>
         </div>`).join('')}
@@ -1267,12 +1267,12 @@ function renderTeleList(){
 
 function renderTeleConnecting(){
   const sel=DOCTORS[S.selectedDoctor];
-  return `<div class="immersive-screen" style="background:linear-gradient(180deg,#0a3d5c,#0a5a78);flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;position:relative;overflow:hidden;font-family:'Plus Jakarta Sans',sans-serif">
+  return `<div class="immersive-screen" style="background:linear-gradient(180deg,#4b0000,#0a5a78);flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;position:relative;overflow:hidden;font-family:'Plus Jakarta Sans',sans-serif">
     <div style="position:absolute;width:200px;height:200px;border-radius:50%;background:rgba(2,132,200,.22);left:50%;top:50%;animation:ring-expand 2.4s ease-out infinite 0s"></div>
     <div style="position:absolute;width:200px;height:200px;border-radius:50%;background:rgba(2,132,200,.18);left:50%;top:50%;animation:ring-expand 2.4s ease-out infinite 0.8s"></div>
     <div style="position:absolute;width:200px;height:200px;border-radius:50%;background:rgba(2,132,200,.14);left:50%;top:50%;animation:ring-expand 2.4s ease-out infinite 1.6s"></div>
     <div style="background:#fff;width:96px;height:96px;border-radius:48px;display:flex;align-items:center;justify-content:center;margin-bottom:28px;z-index:2;box-shadow:0 8px 32px rgba(0,0,0,.25)">
-      <span style="font-size:26px;font-weight:900;color:#0284c8">${sel.init}</span>
+      <span style="font-size:26px;font-weight:900;color:#fa0000">${sel.init}</span>
     </div>
     <div style="font-size:22px;font-weight:800;z-index:2;letter-spacing:-.4px">${sel.name}</div>
     <div style="font-size:14px;opacity:.65;margin-top:6px;z-index:2">${sel.spec}</div>
@@ -1287,7 +1287,7 @@ function renderTeleConnecting(){
 
 function renderTeleCall(){
   const sel=DOCTORS[S.selectedDoctor];
-  return `<div class="immersive-screen" style="background:linear-gradient(180deg,#0a3d5c,#0a6b7a);flex:1;display:flex;flex-direction:column;color:#fff;font-family:'Plus Jakarta Sans',sans-serif">
+  return `<div class="immersive-screen" style="background:linear-gradient(180deg,#4b0000,#0a6b7a);flex:1;display:flex;flex-direction:column;color:#fff;font-family:'Plus Jakarta Sans',sans-serif">
     <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;min-height:420px">
       <div style="position:absolute;top:16px;right:16px;border-radius:14px;width:90px;height:120px;overflow:hidden;background:rgba(0,0,0,.5);border:2px solid rgba(255,255,255,.18);box-shadow:0 4px 16px rgba(0,0,0,.4)">
         <video id="lv" autoplay muted playsinline style="width:100%;height:100%;object-fit:cover;transform:scaleX(-1)"></video>
@@ -1535,7 +1535,7 @@ function renderDeclNew(){
         <div style="background:var(--lime4);width:72px;height:72px;border-radius:36px;display:flex;align-items:center;justify-content:center">${ic('check-circle',36,'var(--lime2)')}</div>
       </div>
       <h1 style="font-size:26px;font-weight:900;color:var(--td2);margin-bottom:6px;letter-spacing:-.6px">Déclaration envoyée !</h1>
-      <p style="font-size:14px;color:var(--tm2);margin-bottom:28px;line-height:1.5">Votre dossier a bien été transmis à MNT Santé.</p>
+      <p style="font-size:14px;color:var(--tm2);margin-bottom:28px;line-height:1.5">Votre dossier a bien été transmis à SMI Mutuelle.</p>
 
       <!-- Reimbursement estimate -->
       <div style="background:var(--hero);border-radius:20px;padding:22px;color:#fff;width:100%;margin-bottom:16px">
